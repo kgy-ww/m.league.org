@@ -1,0 +1,23 @@
+body {
+    background-color: #118745;
+    /* color: #fff; */
+}
+
+.table {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+.table thead th {
+    color: #d4af37;
+    border-bottom: 2px solid #d4ad37;
+}
+.table td, .table th {
+    border-color: #333;
+    vertical-align: middle;
+}
+.rank-border-red {
+    border-left: 8px solid #ff3860;
+}
+.rank-border-green {
+    border-left: 8px solid #118745;
+}

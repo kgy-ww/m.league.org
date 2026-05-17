@@ -1,0 +1,124 @@
+{
+    // 内部マスタ用
+    // チーム名
+    "team_name1": "主将_かがや",
+    "team_name2": "主将_たこゆ",
+    "team_name3": "主将_う　め",
+    "team_name4": "主将_おっち",
+
+    // 選手名
+    "player_name_01": "かがや",
+    "player_name_02": "あおき",
+    "player_name_03": "ささやま",
+
+    "player_name_04": "たこゆ",
+    "player_name_05": "あつ",
+    "player_name_06": "かすや",
+
+    "player_name_07": "う　め",
+    "player_name_08": "あさくら",
+    "player_name_09": "かない",
+
+    "player_name_10": "おっち",
+    "player_name_11": "たけもり",
+    "player_name_12": "なりた",
+
+
+    // ファイル更新用
+    // 消化試合数 
+    "digest_game_number": 3,
+
+    // ランキング
+    // *ここは内部マスタ値を引用
+    "rank1_tn": "主将_かがや",
+    "rank1_pt": "119.5",
+    "rank1_df": "-",
+
+    // *ここは内部マスタ値を引用
+    "rank2_tn": "主将_たこゆ",
+    "rank2_pt": "50.5",
+    "rank2_df": "69.0",
+
+    // *ここは内部マスタ値を引用
+    "rank3_tn": "主将_う　め",
+    "rank3_pt": "-3.7",
+    "rank3_df": "123.2",
+
+    // *ここは内部マスタ値を引用
+    "rank4_tn": "主将_おっち",
+    "rank4_pt": "-166.3",
+    "rank4_df": "285.8",
+
+    // 個人スコア
+    // *ここは内部マスタ値を引用
+    "rank01_player_nm": "かがや",
+    "rank01_player_pt": "119.5",
+    "rank01_player_df": "-",
+    "rank01_player_gm": "3",
+
+    // *ここは内部マスタ値を引用
+    "rank02_player_nm": "たこゆ",
+    "rank02_player_pt": "50.5",
+    "rank02_player_df": "69.0",
+    "rank02_player_gm": "3",
+
+    // *ここは内部マスタ値を引用
+    "rank03_player_nm": "う　め",
+    "rank03_player_pt": "-3.7",
+    "rank03_player_df": "123.2",
+    "rank03_player_gm": "3",
+
+    // *ここは内部マスタ値を引用
+    "rank04_player_nm": "おっち",
+    "rank04_player_pt": "-166.8",
+    "rank04_player_df": "285.8",
+    "rank04_player_gm": "3",
+
+    // *ここは内部マスタ値を引用
+    "rank05_player_nm": "",
+    "rank05_player_pt": "0",
+    "rank05_player_df": "0",
+    "rank05_player_gm": "0",
+
+    // *ここは内部マスタ値を引用
+    "rank06_player_nm": "",
+    "rank06_player_pt": "0",
+    "rank06_player_df": "0",
+    "rank06_player_gm": "0",
+
+    // *ここは内部マスタ値を引用
+    "rank07_player_nm": "",
+    "rank07_player_pt": "0",
+    "rank07_player_df": "0",
+    "rank07_player_gm": "0",
+
+    // *ここは内部マスタ値を引用
+    "rank08_player_nm": "",
+    "rank08_player_pt": "0",
+    "rank08_player_df": "0",
+    "rank08_player_gm": "0",
+
+    // *ここは内部マスタ値を引用
+    "rank09_player_nm": "",
+    "rank09_player_pt": "0",
+    "rank09_player_df": "0",
+    "rank09_player_gm": "0",
+
+    // *ここは内部マスタ値を引用
+    "rank10_player_nm": "",
+    "rank10_player_pt": "0",
+    "rank10_player_df": "0",
+    "rank10_player_gm": "0",
+
+    // *ここは内部マスタ値を引用
+    "rank11_player_nm": "",
+    "rank11_player_pt": "0",
+    "rank11_player_df": "0",
+    "rank11_player_gm": "0",
+
+    // *ここは内部マスタ値を引用
+    "rank12_player_nm": "",
+    "rank12_player_pt": "0",
+    "rank12_player_df": "0",
+    "rank12_player_gm": "0"
+}
