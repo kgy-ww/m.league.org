@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ml.org.admin</title>
+        <link rel="icon" href="data:,">
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <link rel="stylesheet" href="./css/bulma.min.css" type="text/css">
+    </head>
+    <body>
+        <div id="org_overlay">管理者専用画面</div>
+        <sction class="section">
+            <div class="container">
+                <!-- header -->
+                <h1 class="title is-4 has-text-white has-text-centered">成績入力</h1>
+                <p class="subtitle is-6 has-text-white has-text-centered opacity-75">(管理者専用)</p> 
+                <form id="game_form" class="box">
+                    <!-- 対局日 -->
+                    <div class="field mb-5">
+                        <label class="label">対局日</label>
+                        <div class="control">
+                            <input class="input" type="date" id="game_date" required>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- 選手1 -->
+                    <div class="notification is-warning is-light mb-4">
+                        <h2 class="subtitle is-5 has-text-weight-bold mb-3">選手1</h2>
+                        <div class="columns is-mobile">
+                            <div class="column">
+                                <label class="label is-small">チーム名</label>
+                                <div class="select is-fullwidth">
+                                    <select name="t1_name" id="t1_name" class="team_select">
+                                        <option value="">---</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <label class="label is-small">選手名</label>
+                                <div class="select is-fullwidth">
+                                    <select name="p1_name" id="p1_name" class="player_select" required disabled>
+                                        <option value="">---</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns is-mobile">
+                            <div class="column">
+                                <label class="label is-small">ポイント</label>
+                                <input class="input" type="number" name="p1_tasu_pt" step="0.1" inputmode="decimal">
+                            </div>
+                            <div class="column">
+                                <label class="label is-small">ペナルティ</label>
+                                <input class="input" type="number" name="p1_hiku_pt" max="0" step="20" inputmode="numeric">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 選手2 -->
+                    <div class="notification is-warning is-light mb-4">
+                        <h2 class="subtitle is-5 has-text-weight-bold mb-3">選手2</h2>
+                        <div class="columns is-mobile">
+                            <div class="column">
+                                <label class="label is-small">チーム名</label>
+                                <div class="select is-fullwidth">
+                                    <select name="t2_name" id="t2_name" class="team_select">
+                                        <option value="">---</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <label class="label is-small">選手名</label>
+                                <div class="select is-fullwidth">
+                                    <select name="p2_name" id="p2_name" class="player_select" required disabled>
+                                        <option value="">---</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns is-mobile">
+                            <div class="column">
+                                <label class="label is-small">ポイント</label>
+                                <input class="input" type="number" name="p2_tasu_pt" step="0.1" inputmode="decimal">
+                            </div>
+                            <div class="column">
+                                <label class="label is-small">ペナルティ</label>
+                                <input class="input" type="number" name="p2_hiku_pt" max="0" step="20" inputmode="numeric">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 選手3 -->
+                    <div class="notification is-warning is-light mb-4">
+                        <h2 class="subtitle is-5 has-text-weight-bold mb-3">選手3</h2>
+                        <div class="columns is-mobile">
+                            <div class="column">
+                                <label class="label is-small">チーム名</label>
+                                <div class="select is-fullwidth">
+                                    <select name="t3_name" id="t3_name" class="team_select">
+                                        <option value="">---</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <label class="label is-small">選手名</label>
+                                <div class="select is-fullwidth">
+                                    <select name="p3_name" id="p3_name" class="player_select" required disabled>
+                                        <option value="">---</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns is-mobile">
+                            <div class="column">
+                                <label class="label is-small">ポイント</label>
+                                <input class="input" type="number" name="p3_tasu_pt" step="0.1" inputmode="decimal">
+                            </div>
+                            <div class="column">
+                                <label class="label is-small">ペナルティ</label>
+                                <input class="input" type="number" name="p3_hiku_pt" max="0" step="20" inputmode="numeric">
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <!-- 選手4 -->
+                    <div class="notification is-warning is-light mb-4">
+                        <h2 class="subtitle is-5 has-text-weight-bold mb-3">選手4</h2>
+                        <div class="columns is-mobile">
+                            <div class="column">
+                                <label class="label is-small">チーム名</label>
+                                <div class="select is-fullwidth">
+                                    <select name="t4_name" id="t4_name" class="team_select">
+                                        <option value="">---</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <label class="label is-small">選手名</label>
+                                <div class="select is-fullwidth">
+                                    <select name="p4_name" id="p4_name" class="player_select" required disabled>
+                                        <option value="">---</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns is-mobile">
+                            <div class="column">
+                                <label class="label is-small">ポイント</label>
+                                <input class="input" type="number" name="p4_tasu_pt" step="0.1" inputmode="decimal">
+                            </div>
+                            <div class="column">
+                                <label class="label is-small">ペナルティ</label>
+                                <input class="input" type="number" name="p4_hiku_pt" max="0" step="20" inputmode="numeric">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 送信ボタン -->
+                    <div class="field">
+                        <div class="control">
+                            <button type="submit" class="button is-fullwidth is-medium has-text-weight-bold">
+                                送信
+                            </button>
+                        </div>
+                    </div>
+
+                </form> <!-- /.game_form -->
+            </div> <!-- /.container -->
+        </sction>
+        <script src="./js/config.js"></script>
+        <script src="./js/admin.js" defer></script>
+    </body>
+</html>

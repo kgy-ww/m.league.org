@@ -2,16 +2,35 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1">
-        <title>m.league.org</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ml.org</title>
         <link rel="icon" href="data:,">
         <link rel="stylesheet" href="./css/style.css" type="text/css">
         <link rel="stylesheet" href="./css/bulma.min.css" type="text/css">
     </head>
     <body>
+        <!-- 外部リンク -->
+        <nav class="navbar is-dark org-navbar">
+            <div class="navbar-brand org-navbar-brand">
+                <div class="navbar-item has-text-white">
+                    m.league.org
+                </div>
+                <!-- リリース前
+                <a href="rule.html" class="navbar-item">
+                    <span class="icon">
+                        <img src="./svg/book.svg">
+                    </span>
+                </a>
+                -->
+                <a href="admin.html" class="navbar-item">
+                    <span class="icon">
+                        <img src="./svg/gear.svg">
+                    </span>
+                </a>
+            </div> <!-- /.navbar-brand -->
+        </nav> 
         <section class="section">
             <div class="container">
-                <h1 class="title has-text-centered has-text-white">m.league.org</h1>
                 <!-- チーム成績 -->
                 <div class="columns is-centered">
                     <div class="column is-8">
@@ -28,48 +47,11 @@
                                         <th class="has-text-centered">試合数</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr class="rank-border-red">
-                                        <td class="has-text-centered">1</td>
-                                        <td class="has-text-centered"><span id="rank1_tn"></span></td>
-                                        <td class="has-text-right"><span id="rank1_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank1_df"></span></td>
-                                        <td class="has-text-centered">
-                                            <span id="digest_game_number1"></span>/24
-                                        </td>
-                                    </tr>
-                                    <tr class="rank-border-green">
-                                        <td class="has-text-centered">2</td>
-                                        <td class="has-text-centered"><span id="rank2_tn"></span></td>
-                                        <td class="has-text-right"><span id="rank2_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank2_df"></span></td>
-                                        <td class="has-text-centered">
-                                            <span id="digest_game_number2"></span>/24
-                                        </td>
-                                    </tr>
-                                    <tr class="rank-border-green">
-                                        <td class="has-text-centered">3</td>
-                                        <td class="has-text-centered"><span id=rank3_tn></span></td>
-                                        <td class="has-text-right"><span id="rank3_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank3_df"></span></td>
-                                        <td class="has-text-centered">
-                                            <span id="digest_game_number3"></span>/24
-                                        </td>
-                                    </tr>
-                                    <tr class="rank-border-green">
-                                        <td class="has-text-centered">4</td>
-                                        <td class="has-text-centered"><span id="rank4_tn"></span></td>
-                                        <td class="has-text-right"><span id="rank4_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank4_df"></span></td>
-                                        <td class="has-text-centered">
-                                            <span id="digest_game_number4"></span>/24
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                <tbody id="team_data"></tbody>
                             </table>
-                        </div> <!-- /.box /.has-background-grey-darker -->
-                    </div>
-                </div>
+                        </div> <!-- /.box -->
+                    </div> <!-- /.column -->
+                </div> <!-- /.columns -->
 
                 <!-- 個人成績 -->
                 <div class="columns is-centered">
@@ -87,105 +69,13 @@
                                         <th class="has-text-centered">試合数</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <!-- 個人スコア 1位 -->
-                                    <tr class="rank-border-red">
-                                        <td class="has-text-centered">1</td>
-                                        <td class="has-text-centered"><span id="rank01_player_nm"></span></td>
-                                        <td class="has-text-right"><span id="rank01_player_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank01_player_df"></span></td>
-                                        <td class="has-text-centered"><span id="rank01_player_gm"></span></td>
-                                    </tr>
-                                    <!-- 個人スコア 2位 -->
-                                    <tr class="rank-border-green">
-                                        <td class="has-text-centered">2</td>
-                                        <td class="has-text-centered"><span id="rank02_player_nm"></span></td>
-                                        <td class="has-text-right"><span id="rank02_player_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank02_player_df"></span></td>
-                                        <td class="has-text-centered"><span id="rank02_player_gm"></span></td>
-                                    </tr>
-                                    <!-- 個人スコア 3位 -->
-                                    <tr class="rank-border-green">
-                                        <td class="has-text-centered">3</td>
-                                        <td class="has-text-centered"><span id="rank03_player_nm"></span></td>
-                                        <td class="has-text-right"><span id="rank03_player_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank03_player_df"></span></td>
-                                        <td class="has-text-centered"><span id="rank03_player_gm"></span></td>
-                                    </tr>
-                                    <!-- 個人スコア 4位 -->
-                                    <tr class="rank-border-green">
-                                        <td class="has-text-centered">4</td>
-                                        <td class="has-text-centered"><span id="rank04_player_nm"></span></td>
-                                        <td class="has-text-right"><span id="rank04_player_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank04_player_df"></span></td>
-                                        <td class="has-text-centered"><span id="rank04_player_gm"></span></td>
-                                    </tr>
-                                    <!-- // 現状、解放なし
-                                    <tr class="rank-border-green">
-                                        <td class="has-text-centered">5</td>
-                                        <td class="has-text-centered"><span id="rank05_player_nm"></span></td>
-                                        <td class="has-text-right"><span id="rank05_player_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank05_player_df"></span></td>
-                                        <td class="has-text-centered"><span id="rank05_player_gm"></span></td>
-                                    </tr>
-                                    <tr class="rank-border-green">
-                                        <td class="has-text-centered">6</td>
-                                        <td class="has-text-centered"><span id="rank06_player_nm"></span></td>
-                                        <td class="has-text-right"><span id="rank06_player_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank06_player_df"></span></td>
-                                        <td class="has-text-centered"><span id="rank06_player_gm"></span></td>
-                                    </tr>
-                                    <tr class="rank-border-green">
-                                        <td class="has-text-centered">7</td>
-                                        <td class="has-text-centered"><span id="rank07_player_nm"></span></td>
-                                        <td class="has-text-right"><span id="rank07_player_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank07_player_df"></span></td>
-                                        <td class="has-text-centered"><span id="rank07_player_gm"></span></td>
-                                    </tr>
-                                    <tr class="rank-border-green">
-                                        <td class="has-text-centered">8</td>
-                                        <td class="has-text-centered"><span id="rank08_player_nm"></span></td>
-                                        <td class="has-text-right"><span id="rank08_player_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank08_player_df"></span></td>
-                                        <td class="has-text-centered"><span id="rank08_player_gm"></span></td>
-                                    </tr>
-                                    <tr class="rank-border-green">
-                                        <td class="has-text-centered">9</td>
-                                        <td class="has-text-centered"><span id="rank09_player_nm"></span></td>
-                                        <td class="has-text-right"><span id="rank09_player_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank09_player_df"></span></td>
-                                        <td class="has-text-centered"><span id="rank09_player_gm"></span></td>
-                                    </tr>
-                                    <tr class="rank-border-green">
-                                        <td class="has-text-centered">10</td>
-                                        <td class="has-text-centered"><span id="rank10_player_nm"></span></td>
-                                        <td class="has-text-right"><span id="rank10_player_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank10_player_df"></span></td>
-                                        <td class="has-text-centered"><span id="rank10_player_gm"></span></td>
-                                    </tr>
-                                    <tr class="rank-border-green">
-                                        <td class="has-text-centered">11</td>
-                                        <td class="has-text-centered"><span id="rank11_player_nm"></span></td>
-                                        <td class="has-text-right"><span id="rank11_player_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank11_player_df"></span></td>
-                                        <td class="has-text-centered"><span id="rank11_player_gm"></span></td>
-                                    </tr>
-                                    <tr class="rank-border-green">
-                                        <td class="has-text-centered">12</td>
-                                        <td class="has-text-centered"><span id="rank12_player_nm"></span></td>
-                                        <td class="has-text-right"><span id="rank12_player_pt"></span></td>
-                                        <td class="has-text-right"><span id="rank12_player_df"></span></td>
-                                        <td class="has-text-centered"><span id="rank12_player_gm"></span></td>
-                                    </tr>
-                                    -->
-                                </tbody>
+                                <tbody id="player_data"></tbody>
                             </table>
                         </div> <!-- /.box /.has-background-grey-darker -->
-                    </div>
-                </div>
-
+                    </div> <!-- /.column -->
+                </div> <!-- ./columns -->
             </div> <!-- /.container -->
         </section> <!-- /.section -->
-        <script src="./js/script.js" defer></script>
+        <script src="./js/index.js" defer></script>
     </body>
 </html>
