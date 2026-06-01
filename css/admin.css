@@ -1,11 +1,3 @@
-body {
-    background-color: #118745;
-    /* color: #fff; */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 /* スマホの自動反転を上書きして白背景・黒文字を強制する */
 .box, .input, .select select, .button {
     background-color: #ffffff !important;
