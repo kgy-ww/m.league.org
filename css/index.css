@@ -1,0 +1,46 @@
+.org-navbar {
+    display: block !important;
+}
+.org-navbar-brand {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0 1rem;    
+}
+.org-navbar-brand > div {
+    font-weight: bold !important;
+    margin-right: auto !important;
+    display: block !important;
+}
+.org-navbar-brand > a {
+    display: block !important;
+}
+.org-navbar-item > span > img {
+    width: 1rem;
+    height: 1rem;
+}
+.navbar-item .icon img {
+    filter: brightness(0) invert(1);
+    transition: filter 0.2s ease;
+}
+
+.table {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+.table thead th {
+    color: #d4af37;
+    border-bottom: 2px solid #d4ad37;
+}
+.table td, .table th {
+    border-color: #333;
+    vertical-align: middle;
+}
+.rank-border-red {
+    border-left: 8px solid #ff3860;
+}
+.rank-border-green {
+    border-left: 8px solid #118745;
+}
+
