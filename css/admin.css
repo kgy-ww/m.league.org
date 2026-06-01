@@ -1,0 +1,51 @@
+body {
+    background-color: #118745;
+    /* color: #fff; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* スマホの自動反転を上書きして白背景・黒文字を強制する */
+.box, .input, .select select, .button {
+    background-color: #ffffff !important;
+    color: #333333 !important;
+    border-color: #dbdbdb !important;
+}
+/* ラベル（文字）の色も黒系に固定 */
+.label {
+    color: #363636 !important;
+}
+
+/* 管理者以外は参照させない */
+#org_overlay {
+    /* 画面に固定 */
+    position: fixed !important;
+
+    /* 画面全体に引き伸ばす */
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+
+    /* 外部要因の影響を除外する */
+    width: 100% !important;
+    height: 100% !important;
+
+    background-color: #ffffff !important;
+    z-index: 999999 !important;
+
+    /* 中央揃え */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+.org_hidden {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
