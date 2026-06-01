@@ -49,3 +49,10 @@ body {
     visibility: hidden !important;
     pointer-events: none !important;
 }
+.org_button {
+    width: 75% !important;
+    border-radius: 8px;
+
+    background-color: #4a4a4a !important;
+    color: #ffffff !important
+}
