@@ -1,9 +1,3 @@
-// GASのデプロイURL
-const API_URL = "https://script.google.com/macros/s/AKfycbyaLrQdHY3TzYa23RBApxJ-Z4UCjsumhgU9InGaoFQqbF8sKWChOVrbzFzGDoj_Gd8/exec"
-
-
-
-
 // ページ読み込み時に実行
 document.addEventListener("DOMContentLoaded", () => {
     loadData();

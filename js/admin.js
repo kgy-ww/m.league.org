@@ -1,11 +1,7 @@
-// GASのアプリケーションURL
-const API_URL = "https://script.google.com/macros/s/AKfycbyaLrQdHY3TzYa23RBApxJ-Z4UCjsumhgU9InGaoFQqbF8sKWChOVrbzFzGDoj_Gd8/exec"
-
-
-
-
 // マスタデータを保持するグローバル変数
 let master_data = { teams: [], players: [] }; 
+
+
 // ==========================================
 // 1. ページ読み込み時の初期化処理
 // ==========================================
