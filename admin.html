@@ -8,6 +8,18 @@
         <link rel="icon" href="data:,">
         <link rel="stylesheet" href="./css/style.css" type="text/css">
         <link rel="stylesheet" href="./css/bulma.min.css" type="text/css">
+        <style>
+            /* スマホの自動反転を上書きして白背景・黒文字を強制する */
+            body, .box, .input, .select select, .button {
+                background-color: #ffffff !important;
+                color: #333333 !important;
+                border-color: #dbdbdb !important;
+            }
+            /* ラベル（文字）の色も黒系に固定 */
+            .label {
+                color: #363636 !important;
+            }
+        </style>
     </head>
     <body>
         <div id="org_overlay">管理者専用画面</div>
